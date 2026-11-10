@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="32" viewBox="0 0 56 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Sparkline" clip-path="url(#clip0_0_375)">
+<path id="Line" opacity="0.5" d="M4.30769 15.1294L0 11.9094V40.5714H56V13.5194L51.6923 1.7505L47.3846 8.95238L43.0769 8.19048L38.7692 13.5194L34.4615 12.9524L30.1538 22.9571L25.8462 21.5694L21.5385 15.1294L17.2308 11.9094L12.9231 16.7394L8.61539 19.9594L4.30769 15.1294Z" fill="url(#paint0_linear_0_375)" fill-opacity="0.5"/>
+<path id="Line_2" d="M0 11.9094L4.30769 15.1294L8.61539 19.9594L12.9231 16.7394L17.2308 11.9094L21.5385 15.1294L25.8462 21.5694L30.1538 22.9571L34.4615 12.7076L38.7692 13.5194L43.0769 8.09991L47.3846 8.95238L51.6923 1.7505L56 13.5194" stroke-miterlimit="16" stroke-linecap="round" stroke-linejoin="round" stroke="#84CC16"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_375" x1="28" y1="1.7505" x2="28" y2="33.1428" gradientUnits="userSpaceOnUse">
+<stop stop-color="#84CC16"/>
+<stop offset="1" stop-color="#BEF264" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_0_375">
+<rect width="56" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
