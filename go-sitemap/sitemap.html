@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>G&amp;O Sitemap — Site map</title>
+    <base target="_top" />
+    <script>if (new URLSearchParams(location.search).has('overlay')) document.documentElement.classList.add('overlay-mode');</script>
+    <link rel="stylesheet" href="sitemap.css?v=7" />
+  </head>
+  <body>
+    <main class="sitemap-page" aria-label="Goals and Outcomes site map">
+      <h1 class="sitemap-title">Goals &amp; Outcomes Sitemap</h1>
+      <div class="version-toggle" role="group" aria-label="Sitemap version">
+        <button type="button" data-version="1" aria-label="Sitemap 1" aria-pressed="true"><img src="assets/network-1.svg" alt="" />1</button>
+        <button type="button" data-version="2" aria-label="Sitemap 2" aria-pressed="false"><img src="assets/network-2.svg" alt="" />2</button>
+      </div>
+      <a class="overlay-sitemap-link" href="sitemap.html?version=1" aria-label="Open sitemap 1"><img src="assets/network-overlay.svg" alt="" /><span>1</span></a>
+      <div class="overlay-controls" aria-label="Site map controls">
+        <button class="overlay-control" type="button" aria-label="Minimize site map" onclick="window.parent.postMessage('minimize-sitemap', window.location.origin)">
+          <img src="assets/minimize-2.svg" alt="" />
+        </button>
+      </div>
+      <div class="map-scroll">
+        <div class="map">
+          <svg class="connections" viewBox="0 0 1024 419" aria-hidden="true">
+            <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path d="M 3 1 L 9 5 L 3 9" /></marker></defs>
+            <g>
+              <path d="M 528 35 H 385 Q 370 35 370 50 V 107" />
+              <path d="M 675 35 H 825 Q 840 35 840 50 V 107" />
+              <path d="M 298 145 H 63 Q 48 145 48 160 V 226" />
+              <path d="M 444 145 H 466 Q 481 145 481 160 V 218" />
+              <path d="M 768 145 H 745 Q 730 145 730 160 V 218" />
+              <path d="M 914 145 H 935 Q 950 145 950 160 V 218" />
+              <path d="M 98 256 H 116" />
+              <path d="M 214 256 H 235" />
+              <path d="M 334 256 H 405" />
+              <path d="M 556 256 H 653" marker-start="url(#arrow)" />
+              <path d="M 878 256 H 805" />
+              <path d="M 730 291 V 345" />
+            </g>
+          </svg>
+          <a class="node landing" href="index.html"><span>G&amp;O Landing</span><span>-outcome visualizations &amp; reporting</span><span>-goals highlights &amp; entry points</span><span>-recs highlights &amp; entry points</span></a>
+          <a class="node goals" href="goals-landing.html"><span>Goals Landing</span><span>-outcome visualizations &amp; reporting</span><span>-browse, search &amp; filter goals</span></a>
+          <a class="node recs" href="recs-landing.html"><span>Recommendations Landing</span><span>-browse, search &amp; filter recs</span><span>-manage all recs entry point</span></a>
+          <a class="node create" href="create-goal.html"><span>Create Goal</span></a>
+          <a class="node step-one" href="create-goal-step.html"><span>Create Goal Step</span><span>TBD</span></a>
+          <a class="node step-two" href="create-goal-step.html"><span>Create Goal Step</span><span>TBD</span></a>
+          <a class="node goal-detail" href="goal-detail.html"><span>Goal Detail</span><span>-manage goal</span><span>-view goal-related recs</span></a>
+          <a class="node rec-detail" href="rec-detail.html"><span>Recommendation Detail</span><span>-what to expect</span><span>-why this works</span><span>-view related goal(s)</span></a>
+          <a class="node manage-all" href="manage-all-recs.html"><span>Manage All Recommendations</span><span>-kanban board</span></a>
+          <a class="node manage-single" href="manage-single-rec.html"><span>Manage Single Recommendation</span><span>-configure rec or test</span><span>-activate rec or test</span><span>-view outcomes</span></a>
+        </div>
+      </div>
+    </main>
+    <script src="sitemap.js?v=5"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; }
+body { background: #303340; font-family: Lato, Arial, sans-serif; }
+.sitemap-page { position: relative; min-height: calc(100vh - 48px); margin: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 24px 24px; background: #eaeaec; border-radius: 16px; }
+.sitemap-title { position: absolute; top: 24px; left: 24px; margin: 0; color: #020617; font-size: 16px; line-height: 24px; font-weight: 600; }
+.version-toggle { position: absolute; top: 20px; right: 24px; display: flex; z-index: 2; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px #1a1a1a0d; }
+.version-toggle button { height: 32px; display: flex; align-items: center; gap: 4px; padding: 0 6px; border: 0; background: #f8fafc; color: #020617; font: 400 12px Lato, Arial, sans-serif; cursor: pointer; }
+.version-toggle button + button { border-left: 1px solid #e2e8f0; }
+.version-toggle button[aria-pressed="true"] { background: #f1f5f9; }
+.version-toggle button:focus-visible { outline: 2px solid #315fbc; outline-offset: -2px; }
+.version-toggle svg { width: 16px; height: 16px; }
+.map-scroll { width: min(100%, 1440px); overflow-x: auto; }
+.map { position: relative; width: 100%; min-width: 850px; aspect-ratio: 1024 / 419; }
+.overlay-controls { display: none; }
+.overlay-sitemap-link { display: none; }
+.connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.connections g { fill: none; stroke: #aaa; stroke-width: 2; marker-end: url(#arrow); }
+.connections marker path { fill: none; stroke: #aaa; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.node { position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: .5%; border: 2px solid #bcbcbc; border-radius: 4px; background: #757575; color: white; text-align: center; text-decoration: none; line-height: 1.4; font-size: clamp(7px, .78vw, 11px); }
+.node:hover { background: #5f5f5f; }
+.node:focus-visible { outline: 3px solid #315fbc; outline-offset: 3px; }
+.landing { left: 49.69%; top: 0; width: 18%; height: 16.71%; }
+.goals { left: 27.23%; top: 26.49%; width: 18%; height: 16.71%; }
+.recs { left: 74.9%; top: 26.49%; width: 14.26%; height: 16.71%; }
+.create, .step-one, .step-two { top: 54.89%; width: 9.38%; height: 12.65%; }
+.create { left: 0; }
+.step-one { left: 11.62%; }
+.step-two { left: 23.24%; }
+.goal-detail, .rec-detail, .manage-all { top: 52.74%; width: 14.26%; height: 16.71%; }
+.goal-detail { left: 39.84%; }
+.rec-detail { left: 64.06%; }
+.manage-all { left: 85.74%; }
+.manage-single { left: 63.87%; top: 83.29%; width: 14.65%; height: 16.71%; }
+@media (max-width: 900px) { .sitemap-page { padding: 16px; } .node { font-size: 8px; } }
+.overlay-mode, .overlay-mode body { width: 100%; height: 100%; min-height: 0; background: white; }
+.overlay-mode .sitemap-page { width: 100%; height: 100%; min-height: 0; margin: 0; padding: 12px; background: white; border-radius: 0; }
+.overlay-mode .sitemap-title { display: none; }
+.overlay-mode .version-toggle { display: none; }
+.overlay-mode .overlay-sitemap-link { position: absolute; z-index: 2; top: 9px; left: 9px; display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px; border-radius: 10px; background: #f1f5f9; color: #020617; font: 500 14px/20px Lato, Arial, sans-serif; text-decoration: none; box-shadow: 0 1px 2px #1a1a1a0d; }
+.overlay-mode .overlay-sitemap-link:hover { background: #e2e8f0; }
+.overlay-mode .overlay-sitemap-link:focus-visible { outline: 2px solid #315fbc; outline-offset: 2px; }
+.overlay-mode .map-scroll { width: 100%; overflow: visible; }
+.overlay-mode .map { min-width: 0; }
+.overlay-mode .overlay-controls { position: absolute; z-index: 2; top: 9px; right: 9px; display: flex; }
+.overlay-control { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 10px; color: #020617; background: #f1f5f9; cursor: pointer; text-decoration: none; }
+.overlay-control svg { width: 16px; height: 16px; }
+.overlay-control img { display: block; }
+.overlay-control:hover { background: #e2e8f0; }
+.overlay-control:focus-visible { outline: 2px solid #315fbc; outline-offset: 2px; }
+.overlay-mode .node { font-size: 6px; font-weight: 700; border-width: .65px; border-radius: 1px; }
+.overlay-mode .node span:not(:first-child) { display: none; }
+.overlay-mode .connections g { stroke-width: 3; }
+.overlay-mode .connections marker path { stroke-width: 2; }
