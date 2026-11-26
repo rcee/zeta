@@ -3,7 +3,7 @@ html, body { min-height: 100%; margin: 0; }
 body { background: #303340; font-family: Lato, Arial, sans-serif; }
 .sitemap-page { position: relative; min-height: calc(100vh - 48px); margin: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 24px 24px; background: #eaeaec; border-radius: 16px; }
 .sitemap-title { position: absolute; top: 24px; left: 24px; margin: 0; color: #020617; font-size: 16px; line-height: 24px; font-weight: 600; }
-.version-toggle { position: absolute; top: 20px; right: 24px; display: flex; z-index: 2; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px #1a1a1a0d; }
+.version-toggle { position: absolute; bottom: 24px; left: 24px; display: flex; z-index: 2; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px #1a1a1a0d; }
 .version-toggle button { height: 32px; display: flex; align-items: center; gap: 4px; padding: 0 6px; border: 0; background: #f8fafc; color: #020617; font: 400 12px Lato, Arial, sans-serif; cursor: pointer; }
 .version-toggle button + button { border-left: 1px solid #e2e8f0; }
 .version-toggle button[aria-pressed="true"] { background: #f1f5f9; }
